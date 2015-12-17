@@ -139,6 +139,9 @@ function skio_knd_scripts() {
 	//bs.js, dependent on jquery, run in footer
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js',  array('jquery'), '', true);
 
+	//ie10-viewport-bug-workaround.js
+	wp_enqueue_script('ie10-viewport-bug-workaround_js', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js', '', '', true);
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
