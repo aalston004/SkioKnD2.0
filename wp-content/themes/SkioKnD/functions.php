@@ -114,7 +114,11 @@ add_action( 'widgets_init', 'skio_knd_widgets_init' );
  * Enqueue scripts and styles.
  */
 function skio_knd_scripts() {
+	//syle.css
 	wp_enqueue_style( 'skio_knd-style', get_stylesheet_uri() );
+
+	//bs.css
+	wp_enqueue_style();
 
 	wp_enqueue_script( 'skio_knd-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

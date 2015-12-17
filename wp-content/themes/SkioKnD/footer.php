@@ -7,22 +7,19 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Skio_KnD
+ * narrow jumbo
  */
 
 ?>
 
-	</div><!-- #content -->
+	 <footer class="footer">
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'skio_knd' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'skio_knd' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'skio_knd' ), 'skio_knd', '<a href="http://kndfashions.com" rel="designer">Skio</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+    </div> <!-- /container -->
 
-<?php wp_footer(); ?>
 
-</body>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
