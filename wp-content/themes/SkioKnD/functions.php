@@ -124,7 +124,15 @@ function skio_knd_scripts() {
 
 	wp_enqueue_script( 'skio_knd-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
-	
+	global $wp_scripts;
+	//js1 from head, no dependencies, load from head
+	wp_register_script( 'html5_shiv', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js', '', '', false);
+	//js2 from head, no dependencies, load from head
+	wp_register_script( 'respond_js', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', '', '', false);
+	//conditional IE 9 < script
+	$wp_scripts->add_data('html5_shiv', 'conditional', 'lt IE 9');
+	$wp_scripts->add_data('respond_js', 'conditional', 'lt IE 9');
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
