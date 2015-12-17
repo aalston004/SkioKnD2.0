@@ -7,6 +7,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Skio_KnD
+ *
+ * Init = based on Jumbo
  */
 
 ?><!DOCTYPE html>
