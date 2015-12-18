@@ -22,7 +22,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <a href="<?php bloginfo('url'); ?>">KnD Fashions</a>
+    <title><a href="<?php bloginfo('url'); ?>">KnD Fashions</a></title>
 
     <?php wp_head(); ?>
 
