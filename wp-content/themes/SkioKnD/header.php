@@ -35,11 +35,11 @@
           <ul class="nav nav-pills pull-right">            
 	          <?php
 	          	$args = array(
-						'primary' 		=> 'Primary Menu',
-						'primary_class' => 'nav navbar-nav',
-						'container'		=> 'true'
+						'menu' 			=> 'primary',
+						'menu_class'	=> 'nav navbar-nav',
+						'container'		=> 'false'
 	          		);
-	          
+
 	          	wp_nav_menu( $args );
 	          ?>
           </ul>
