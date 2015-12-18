@@ -32,10 +32,15 @@
     <div class="container">
       <div class="header clearfix">
         <nav>
-          <ul class="nav nav-pills pull-right">
-            
-          	
-            
+          <ul class="nav nav-pills pull-right">            
+	          <?php
+	          	$args = array(
+						'primary' 		=> 'Primary Menu',
+						'primary_class' => 'nav navbar-nav',
+						'container'		=> 'false'
+	          		);
+	          	wp_nav_menu( $args );
+	          ?>
           </ul>
         </nav>
         <h3 class="text-muted"><?php bloginfo('name'); ?></h3>
