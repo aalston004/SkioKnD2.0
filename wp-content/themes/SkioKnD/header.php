@@ -41,5 +41,5 @@
             <li role="presentation"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">Project name</h3>
+        <h3 class="text-muted"><?php bloginfo('name'); ?></h3>
       </div>
