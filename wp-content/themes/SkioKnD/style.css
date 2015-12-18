@@ -35,6 +35,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @-o-viewport      { width: device-width; }
 @viewport         { width: device-width; }
 
+
+
+
 /*
  **************************
 	Jumbo
@@ -118,4 +121,8 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.current-menu-item > a{
+	background: #001;
 }
