@@ -31,7 +31,7 @@
 
   </head>
 
-  <body>
+  <body <?php body_class(); ?> >
     <div class="container">
       <div class="header clearfix">
         <nav>
