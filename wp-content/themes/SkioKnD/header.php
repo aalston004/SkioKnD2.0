@@ -37,7 +37,7 @@
 	          	$args = array(
 						'primary' 		=> 'Primary Menu',
 						'primary_class' => 'nav navbar-nav',
-						'container'		=> 'false'
+						'container'		=> 'true'
 	          		);
 	          	wp_nav_menu( $args );
 	          ?>
