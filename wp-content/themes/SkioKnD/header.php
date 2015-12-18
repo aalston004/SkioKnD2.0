@@ -39,6 +39,7 @@
 						'primary_class' => 'nav navbar-nav',
 						'container'		=> 'true'
 	          		);
+	          
 	          	wp_nav_menu( $args );
 	          ?>
           </ul>
