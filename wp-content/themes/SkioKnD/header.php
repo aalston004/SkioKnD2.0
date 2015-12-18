@@ -24,9 +24,6 @@
 
     <title>KnD Fashions</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
     <?php wp_head(); ?>
 
   </head>
