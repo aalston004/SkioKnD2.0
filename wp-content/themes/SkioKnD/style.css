@@ -10,12 +10,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: skio_knd
 Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Skio KnD is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 */
 
 
@@ -126,3 +120,37 @@ body {
 .current-menu-item > a{
 	background: #D0D0D0;
 }
+
+
+@media (min-width:768px) {
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background: #222;
+    padding: 10px 15px;
+    width: 200px;   
+  }
+
+  li:hover .sub-menu {
+    display: block;
+  }
+
+}
+
+.sub-menu li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.sub-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.sub-menu a  {
+  color: #999;
+  text-decoration: none;
+}
+
+.sub-menu a:hover  {
+  color: #fff;  
+} 
