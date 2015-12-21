@@ -1,33 +1,37 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Skio_KnD
+ */
 
-     
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <?php if (have_posts()) : while (have_posts()) : the_post; ?>            
-            <div class="page-header">
-              <h1><?php the_title(); ?></h1>
-            </div>
-            <?php the_content(); ?>
+get_header(); ?>
 
-          <?php endwhile; else: ?>
-            <div class="page-header">
-              <h1>Error!</h1>
-            </div>
-            <p>No content available</p>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-          <?php endif; ?>
-        </div>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
+			<?php endwhile; // End of the loop. ?>
 
-<?php get_footer(); ?>  
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
