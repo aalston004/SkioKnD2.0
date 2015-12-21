@@ -13,7 +13,9 @@
 ?>
 
 	 <footer class="footer">
-        <p>&copy; 2015 Company, Inc.</p>
+        <p>&copy; <?php bloginfo('name'); ?>
+        		  <?php echo date('y'); ?>
+        </p>
       </footer>
 
     </div> <!-- /container -->
