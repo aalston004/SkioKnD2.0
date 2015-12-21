@@ -13,7 +13,7 @@ get_header(); ?>
         <div class="col-lg-6">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'page-full-width' ); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 					<?php
 						// If comments are open or we have at least one comment, load up the comment template.
