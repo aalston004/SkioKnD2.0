@@ -111,6 +111,12 @@ function skio_knd_widgets_init() {
 add_action( 'widgets_init', 'skio_knd_widgets_init' );
 
 /**
+ * Custom widget(s)
+*/
+front_widgets('Front Page Right', 'front-right', 'displays on right of front page');
+front_widgets('Front Page Left', 'front-left', 'displays on left of front page');
+
+/**
  * Enqueue scripts and styles.
  */
 function skio_knd_scripts() {
