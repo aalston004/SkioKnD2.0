@@ -14,7 +14,7 @@ get_header(); ?>
 			<div class ="col-md-12">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', 'page-full-width' ); ?>
 
 					<?php
 						// If comments are open or we have at least one comment, load up the comment template.
@@ -24,7 +24,7 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; // End of the loop. ?>
-			</div>
+			</div><!-- added for grid -->
 		</div><!-- was #main -->
 	</div><!-- was #primary -->
 
