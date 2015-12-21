@@ -9,21 +9,26 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-				<?php while ( have_posts() ) : the_post(); ?>
+	<div class="row marketing">
+        <div class="col-lg-12">
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+	          <div class="page-header">
+	            <h1><?php the_title(); ?></h1>
+	          </div>
 
-					<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-					?>
+	          <?php the_content(); ?>
 
-				<?php endwhile; // End of the loop. ?>
-		</main><!-- was #main -->
+	        <?php endwhile; else: ?>
+	          
+	          <div class="page-header">
+	            <h1>Error</h1>
+	          </div>
+
+	          <p>No content available</p>
+
+	        <?php endif; ?>
+		</div><!-- was #main -->
 	</div><!-- was #primary -->
 
 <?php get_footer(); ?>
