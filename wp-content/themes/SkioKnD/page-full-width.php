@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div class="row marketing">
-        <div class="col-lg-6">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; // End of the loop. ?>
-		</div><!-- was #main -->
+		</main><!-- was #main -->
 	</div><!-- was #primary -->
 
 <?php get_footer(); ?>

@@ -20,7 +20,8 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="row marketing">
+		<div class="col-lg-6">
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
@@ -35,6 +36,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+		</div>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
