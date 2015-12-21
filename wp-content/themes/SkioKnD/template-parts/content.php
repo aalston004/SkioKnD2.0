@@ -20,7 +20,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="col-lg-12">
+	<div class="entry-content">
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
