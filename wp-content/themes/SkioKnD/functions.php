@@ -149,7 +149,7 @@ function skio_knd_scripts() {
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
 
 	//bstheme.css
-	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
+	wp_enqueue_style( 'bootstrap_theme_css', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
 
 	wp_enqueue_script( 'skio_knd-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
