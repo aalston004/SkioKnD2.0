@@ -9,7 +9,7 @@
 
 ?>
 	<div class="row marketing">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
 			<div class="page-header">
 				<h1><?php the_title(); ?></h1>
 			</div>
