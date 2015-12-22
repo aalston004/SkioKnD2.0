@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-12">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<div class="page header">
@@ -25,7 +25,7 @@ get_header(); ?>
 					<h1><?php the_title(); ?></h1>
 				</div>
 
-				<p>No content availible</p>
+				<p>No content avail</p>
 
 				<?php endif; ?>
 
