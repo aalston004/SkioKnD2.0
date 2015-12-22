@@ -9,17 +9,30 @@
 
 get_header(); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<div class="page header">
+					<h1><?php the_title(); ?></h1>
+				</div>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+				<?php the_content(); ?>
+				<?php endwhile; else; ?>
 
-			<?php endwhile; // End of the loop. ?>
+				<div class="page header">
+					<h1><?php the_title(); ?></h1>
+				</div>
+
+				<p>No content availible</p>
+
+				<?php endif; ?>
+
+
+		</div>
+	</div>
+</div>
+
 
 <?php get_footer(); ?>
