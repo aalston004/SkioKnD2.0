@@ -15,7 +15,8 @@ get_header(); ?>
 	            <h1><?php the_title(); ?></h1>
 	          </div>
 
-		<div class="row marketing">
+    <div class="container">
+		<div class="row">
 	        <div class="col-lg-12">
 	          	<?php the_content(); ?>
 
@@ -27,8 +28,9 @@ get_header(); ?>
 
 	          <p>No content available</p>
 
-	        <?php endif; ?>
-		</div><!-- was #main -->
-	</div><!-- was #primary -->
+	        	<?php endif; ?>
+			</div><!-- was #main -->
+		</div><!-- was #primary -->
+	</div>
 
 <?php get_footer(); ?>
