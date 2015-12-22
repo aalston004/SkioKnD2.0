@@ -14,7 +14,7 @@
 
 	 <footer class="footer">
         <p>&copy; <?php bloginfo('name'); ?>
-        		  <?php echo date('y'); ?>
+        		  20<?php echo date('y'); ?>
         </p>
       </footer>
 
