@@ -9,8 +9,6 @@
 
 get_header(); ?>
 
-	<div class="row marketing">
-        <div class="col-lg-8">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
@@ -23,8 +21,5 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; // End of the loop. ?>
-
-		</div><!-- #main -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
