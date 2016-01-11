@@ -166,6 +166,8 @@ function skio_knd_scripts() {
 
 	//bs.js, dependent on jquery, run in footer
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js',  array('jquery'), '', true);
+	//theme.js, dependent on jquery & bs js, run in footer
+	wp_enqueue_script('theme_js', get_template_directory_uri() . '/js/theme.js',  array('jquery', 'bootstrap_js'), '', true);
 
 	//ie10-viewport-bug-workaround.js
 	wp_enqueue_script('ie10-viewport-bug-workaround_js', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js', '', '', true);
