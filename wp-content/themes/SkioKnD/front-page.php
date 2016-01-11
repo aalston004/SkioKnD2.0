@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+
+      <?php
+        $args = array(
+            'post_type' =>'post',
+            'category_name' = 'featured'
+          );
+
+        $the_query = new WP_Query($args);
+      ?>
+
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -33,6 +43,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
 
       <div class="row marketing">
         <div class="col-lg-6">
