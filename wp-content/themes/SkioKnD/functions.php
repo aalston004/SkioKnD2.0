@@ -207,5 +207,6 @@ require get_template_directory() . '/inc/jetpack.php';
 
 /**
  * Load WooCommerce compatibility file.
- */
-require get_template_directory() . '/inc/woocommerce.php';  
+ *
+ *require get_template_directory() . '/inc/woocommerce.php'; 
+ */ 
