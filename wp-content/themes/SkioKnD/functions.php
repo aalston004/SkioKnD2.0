@@ -15,6 +15,7 @@ if ( ! function_exists( 'skio_knd_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+
 function skio_knd_setup() {
 	/*
 	 * Make theme available for translation.
@@ -201,4 +202,7 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-
+/**
+ * Load WooCommerce compatibility file.
+ */
+require get_template_directory() . '/inc/woocommerce.php';  
