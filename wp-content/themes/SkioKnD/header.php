@@ -32,7 +32,6 @@
     <div id="page" class="hfeed site">
         <div class="header clearfix">
           <nav class="nav nav-pills pull-right">
-           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navigation">
                 <span class="sr-only">Toggle navigation</span>
@@ -57,7 +56,6 @@
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
-        </div>
-      </nav>
+       </nav>
       </div>
     <div class="container">
