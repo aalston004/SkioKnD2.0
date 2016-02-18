@@ -31,8 +31,15 @@
   <body <?php body_class(); ?> >
     <div class="container">
       <div class="header clearfix">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
         <nav>
-          <ul class="nav nav-pills pull-right navbar-collapse collapse">            
+          <ul class="nav nav-pills pull-right">            
 	          <?php
 	          	$args = array(
 						'menu' 			=> 'primary',
@@ -43,5 +50,6 @@
 	          ?>
           </ul>
         </nav>
+           </div>
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>
