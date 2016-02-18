@@ -40,7 +40,8 @@
               </button>
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             </div>          
-  	          <nav class="nav nav-pills pull-right">
+  	          <nav>
+                <ul class="nav nav-pills pull-right">
                 <?php
     	          	$args = array(
     						'menu' 			      => 'primary',
@@ -55,5 +56,6 @@
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
+                </ul>
               </nav>
         </div>
