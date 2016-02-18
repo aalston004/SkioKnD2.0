@@ -32,7 +32,7 @@
     <div class="container">
       <div class="header clearfix">
         <nav>
-          <ul class="navbar-collapse collapse">            
+          <ul class="nav nav-pills pull-right collapse">            
 	          <?php
 	          	$args = array(
 						'menu' 			=> 'primary',
