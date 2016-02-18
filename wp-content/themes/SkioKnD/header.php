@@ -29,10 +29,9 @@
   </head>
 
   <body <?php body_class(); ?> >
-      <div class="container">
         <div class="header clearfix">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" aria-expanded="false">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navigation">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -40,14 +39,13 @@
               </button>
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             </div>          
-  	          <nav>
                 <ul class="nav nav-pills pull-right">
                 <?php
     	          	$args = array(
     						'menu' 			      => 'primary',
                 'theme_location'  => 'primary',
                 'depth'           => '2',
-                'container'       => 'false',
+                'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse',
                 'container_id'    => 'primary-navigation',
     						'menu_class'	    => 'nav navbar-nav',
@@ -57,5 +55,5 @@
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
                 </ul>
-              </nav>
         </div>
+    <div class="container">
