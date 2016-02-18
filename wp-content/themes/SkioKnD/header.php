@@ -30,7 +30,6 @@
 
   <body <?php body_class(); ?> >
       <div class="container">
-        <nav class="nav nav-pills pull-right">
         <div class="header clearfix">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" aria-expanded="false">
@@ -41,20 +40,20 @@
               </button>
                 <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             </div>          
-  	          
-              <?php
-  	          	$args = array(
-  						'menu' 			      => 'primary',
-              'theme_location'  => 'primary',
-              'depth'           => '2',
-              'container'       => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id'    => 'primary-navigation',
-  						'menu_class'	    => 'nav navbar-nav',
-              'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-              'walker'          => 'new wp_bootstrap_navwalker()'
-  	          		);
-  	          	wp_nav_menu( $args ); //see codex
-  	          ?>
+  	          <nav class="nav nav-pills pull-right">
+                <?php
+    	          	$args = array(
+    						'menu' 			      => 'primary',
+                'theme_location'  => 'primary',
+                'depth'           => '2',
+                'container'       => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id'    => 'primary-navigation',
+    						'menu_class'	    => 'nav navbar-nav',
+                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+                'walker'          => 'new wp_bootstrap_navwalker()'
+    	          		);
+    	          	wp_nav_menu( $args ); //see codex
+    	          ?>
+              </nav>
         </div>
-      </nav>
