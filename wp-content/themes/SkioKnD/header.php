@@ -29,6 +29,7 @@
   </head>
 
   <body <?php body_class(); ?> >
+    <div id="page" class="hfeed site">
         <div class="header clearfix">
           <nav class="nav nav-pills pull-right">
            <div class="container">
@@ -56,7 +57,7 @@
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
-                
         </div>
       </nav>
+      </div>
     <div class="container">

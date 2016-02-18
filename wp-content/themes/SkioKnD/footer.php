@@ -12,15 +12,15 @@
 
 ?>
 
+
 	 <footer class="footer">
         <p>&copy; <?php bloginfo('name'); ?>
         		  20<?php echo date('y'); ?>
         </p>
       </footer>
 
-    </div> <!-- /container -->
-
-
+		</div><!-- container -->
+    </div> <!-- page (was container) -->
 
     <?php wp_footer(); ?>
   </body>
