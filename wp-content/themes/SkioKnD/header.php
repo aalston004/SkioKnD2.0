@@ -38,6 +38,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+          </div>
         <nav>
           <ul class="nav nav-pills pull-right">            
 	          <?php
@@ -50,6 +51,5 @@
 	          ?>
           </ul>
         </nav>
-           </div>
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>
