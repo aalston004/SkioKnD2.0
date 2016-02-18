@@ -43,5 +43,5 @@
 	          ?>
           </ul>
         </nav>
-        <h3 class="text-muted"><?php bloginfo('name'); ?></h3>
+        <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>
