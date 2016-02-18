@@ -196,6 +196,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
+ * Load the menu nav walker for bootstrap by Edward McIntyre
+ */
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
