@@ -43,8 +43,8 @@
                 <?php
     	          	$args = array(
     						'menu' 			      => 'primary',
-                'depth'           => '2',
-                'container'       => 'false',
+                'theme_location'  => 'primary',
+                'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse',
                 'container_id'    => 'primary-navigation',
     						'menu_class'	    => 'nav nav-pills pull-right',
