@@ -46,7 +46,8 @@
   	          	$args = array(
   						'menu' 			  => 'primary',
   						'menu_class'	=> 'nav navbar-nav',
-  						'container'		=> 'false'
+  						'container'		=> 'false',
+              'depth'       => '2'
   	          		);
   	          	wp_nav_menu( $args ); //see codex
   	          ?>
