@@ -31,30 +31,27 @@
   <body <?php body_class(); ?> >
    <div class="container">
         <div class="header clearfix">
-          <nav>
+          <nav class="nav nav-pills pull-right">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navigation">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <small class="text-muted">Menu</small>
               </button>
+ 				<a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             </div>        
                 <?php
     	          	$args = array(
-    						'menu' 			      => 'primary',
-                'theme_location'  => 'primary',
-                'depth'           => '2',
-                'container'       => 'div',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'primary-navigation',
-    						'menu_class'	    => 'nav nav-pills pull-right',
-                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                'walker'          => new wp_bootstrap_navwalker())
+		    			'menu' 			  => 'primary',
+		                'theme_location'  => 'primary',
+		                'depth'           => '2',
+		                'container'       => 'div',
+		                'container_class' => 'collapse navbar-collapse',
+		                'container_id'    => 'primary-navigation',
+		    			'menu_class'	  => 'nav navbar-nav',
+		                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+		                'walker'          => new wp_bootstrap_navwalker())
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
-
        </nav>
-       <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>

@@ -186,6 +186,11 @@ add_action( 'wp_enqueue_scripts', 'skio_knd_scripts' );
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Load the menu nav walker for bootstrap by Edward McIntyre
+ */
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -194,11 +199,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-/**
- * Load the menu nav walker for bootstrap by Edward McIntyre
- */
-require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 /**
  * Customizer additions.
