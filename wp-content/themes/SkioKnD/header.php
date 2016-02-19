@@ -29,7 +29,7 @@
   </head>
 
   <body <?php body_class(); ?> >
-    <div id="page" class="hfeed site">
+   <div class="container">
         <div class="header clearfix">
           <nav class="nav nav-pills pull-right">
             <div class="navbar-header">
@@ -58,4 +58,4 @@
     	          ?>
        </nav>
       </div>
-    <div class="container">
+

@@ -19,8 +19,7 @@
         </p>
       </footer>
 
-		</div><!-- container -->
-    </div> <!-- page (was container) -->
+</div><!-- container -->
 
     <?php wp_footer(); ?>
   </body>
