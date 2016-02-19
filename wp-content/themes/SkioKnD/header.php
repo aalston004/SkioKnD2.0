@@ -31,7 +31,6 @@
   <body <?php body_class(); ?> >
    <div class="container">
         <div class="header clearfix">
-          <nav>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navigation">
                 <span class="sr-only">Toggle navigation</span>
@@ -39,7 +38,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            </div>          
+            </div>
+              <nav>          
                 <?php
     	          	$args = array(
     						'menu' 			      => 'primary',
