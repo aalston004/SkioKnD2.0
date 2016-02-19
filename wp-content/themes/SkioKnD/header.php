@@ -45,9 +45,8 @@
   	          <?php
   	          	$args = array(
   						'menu' 			  => 'primary',
-  						'menu_class'	=> 'nav navbar-nav',
-  						'container'		=> 'false',
-              'depth'       => '2'
+  						'menu_class'	=> 'nav navbar-nav pull-right',
+  						'container'		=> 'false'
   	          		);
   	          	wp_nav_menu( $args ); //see codex
   	          ?>
