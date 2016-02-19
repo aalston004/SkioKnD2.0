@@ -31,7 +31,7 @@
   <body <?php body_class(); ?> >
    <div class="container">
         <div class="header clearfix">
-          <nav class="nav nav-pills pull-right">
+          <nav class="navbar navbar-default">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navigation">
                 <span class="sr-only">Toggle navigation</span>
