@@ -45,7 +45,7 @@
   	          <?php
   	          	$args = array(
   						'menu' 			  => 'primary',
-  						'menu_class'	=> 'nav nav-pills',
+  						'menu_class'	=> 'nav navbar-nav',
   						'container'		=> 'false'
   	          		);
   	          	wp_nav_menu( $args ); //see codex
