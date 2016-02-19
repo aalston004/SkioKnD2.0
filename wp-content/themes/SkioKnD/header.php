@@ -29,35 +29,7 @@
   </head>
 
   <body <?php body_class(); ?> >
-<<<<<<< HEAD
-   <div class="container">
-        <div class="header clearfix">
-          <nav class="navbar navbar-default">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <small class="text-muted">Menu</small>
-              </button>
- 				<a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-            </div>        
-                <?php
-    	          	$args = array(
-		    			'menu' 			  => 'primary',
-		                'theme_location'  => 'primary',
-		                'depth'           => '2',
-		                'container'       => 'div',
-		                'container_class' => 'collapse navbar-collapse',
-		                'container_id'    => 'primary-navigation',
-		    			'menu_class'	  => 'nav navbar-nav',
-		                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-		                'walker'          => "new wp_bootstrap_navwalker()")
-    	          		);
-    	          	wp_nav_menu( $args ); //see codex
-    	          ?>
-       </nav>
-      </div>
-=======
-    <div class="container">
+     <div class="container">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">            
@@ -73,4 +45,4 @@
         </nav>
         <h3 class="text-muted"><?php bloginfo('name'); ?></h3>
       </div>
->>>>>>> parent of b0a10aa... Nav header update1
+
