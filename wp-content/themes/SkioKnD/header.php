@@ -40,7 +40,6 @@
                 <span class="icon-bar"></span>
               </button>
             </div>          
-              <ul class="nav nav-pills pull-right"> 
                 <?php
     	          	$args = array(
     						'menu' 			      => 'primary',
@@ -49,13 +48,12 @@
                 'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse',
                 'container_id'    => 'primary-navigation',
-    						'menu_class'	    => 'nav navbar-nav',
+    						'menu_class'	    => 'nav nav-pills pull-right',
                 'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
                 'walker'          => 'new wp_bootstrap_navwalker())'
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
-              </ul>
        </nav>
        <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>
