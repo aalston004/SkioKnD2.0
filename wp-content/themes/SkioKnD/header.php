@@ -44,7 +44,7 @@
 	          <?php
 	          	$args = array(
 						'menu' 			  => 'primary',
-						'menu_class'	=> 'nav navbar-nav',
+						'menu_class'	=> 'nav nav-pills pull-right',
 						'container'		=> 'false'
 	          		);
 	          	wp_nav_menu( $args ); //see codex
