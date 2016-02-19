@@ -30,24 +30,26 @@
 
   <body <?php body_class(); ?> >
      <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
-      </div>
-         
-        <div class="navbar-collapse collapse">
-	          <?php
-	          	$args = array(
-						'menu' 			  => 'primary',
-						'menu_class'	=> 'nav nav-pills pull-right',
-						'container'		=> 'false'
-	          		);
-	          	wp_nav_menu( $args ); //see codex
-	          ?>
-        </div><!--.navbar-collapse -->
+      <div class="header clearfix">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
+        </div>
+           
+          <div class="navbar-collapse collapse">
+  	          <?php
+  	          	$args = array(
+  						'menu' 			  => 'primary',
+  						'menu_class'	=> 'nav nav-pills pull-right',
+  						'container'		=> 'false'
+  	          		);
+  	          	wp_nav_menu( $args ); //see codex
+  	          ?>
+          </div><!--.navbar-collapse -->
+        </div><!-- clearfix -->
 
