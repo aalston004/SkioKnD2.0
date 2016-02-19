@@ -29,6 +29,7 @@
   </head>
 
   <body <?php body_class(); ?> >
+<<<<<<< HEAD
    <div class="container">
         <div class="header clearfix">
           <nav class="navbar navbar-default">
@@ -55,3 +56,21 @@
     	          ?>
        </nav>
       </div>
+=======
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">            
+	          <?php
+	          	$args = array(
+						'menu' 			=> 'primary',
+						'menu_class'	=> 'nav navbar-nav',
+						'container'		=> 'false'
+	          		);
+	          	wp_nav_menu( $args ); //see codex
+	          ?>
+          </ul>
+        </nav>
+        <h3 class="text-muted"><?php bloginfo('name'); ?></h3>
+      </div>
+>>>>>>> parent of b0a10aa... Nav header update1
