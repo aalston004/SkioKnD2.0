@@ -39,13 +39,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            </div>          
+            </div>    
+             <div class="navbar-header">      
                 <?php
     	          	$args = array(
     						'menu' 			      => 'primary',
                 'theme_location'  => 'primary',
                 'depth'           => '2',
-                'container'       => 'ul',
+                'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse',
                 'container_id'    => 'primary-navigation',
     						'menu_class'	    => 'nav nav-pills pull-right',
@@ -54,6 +55,7 @@
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
+               </div>
        </nav>
        <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>
