@@ -39,7 +39,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             </div>          
                 
                 <?php
@@ -57,5 +56,6 @@
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
        </nav>
+       <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
       </div>
 
