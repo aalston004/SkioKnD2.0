@@ -49,7 +49,7 @@
 		                'container_id'    => 'primary-navigation',
 		    			'menu_class'	  => 'nav navbar-nav',
 		                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-		                'walker'          => new wp_bootstrap_navwalker())
+		                'walker'          => "new wp_bootstrap_navwalker()")
     	          		);
     	          	wp_nav_menu( $args ); //see codex
     	          ?>
